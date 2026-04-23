@@ -1,0 +1,22 @@
+pipeline:
+  name: test-1
+  identifier: test1
+  projectIdentifier: kushaltest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: stage1
+        identifier: stage1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: <+input>
+        tags: {}
