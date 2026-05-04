@@ -1,0 +1,22 @@
+pipeline:
+  name: test-vul-scm
+  identifier: testvulscm
+  tags: {}
+  projectIdentifier: demo1
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: sd
+        identifier: sd
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}
