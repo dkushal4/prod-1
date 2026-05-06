@@ -1,0 +1,25 @@
+template:
+  name: gevfd
+  identifier: gevfd
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: demo1
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: dfs
+          identifier: dfs
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}
