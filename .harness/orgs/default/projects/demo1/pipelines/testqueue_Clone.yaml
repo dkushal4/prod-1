@@ -1,0 +1,22 @@
+pipeline:
+  tags: {}
+  projectIdentifier: demo1
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: stage1
+        identifier: stage1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}
+  identifier: testqueue_Clone
+  name: test-queue - Clone
