@@ -1,0 +1,27 @@
+---
+template:
+  versionLabel: "v1"
+  type: "Pipeline"
+  tags: {}
+  spec:
+    stages:
+    - stage:
+        name: "ds"
+        identifier: "ds"
+        description: ""
+        type: "Custom"
+        spec:
+          execution:
+            steps:
+            - step:
+                type: "Wait"
+                name: "Wait_1"
+                identifier: "Wait_1"
+                spec:
+                  duration: "10m"
+        tags: {}
+        dependsOn: []
+  projectIdentifier: "kushal_test"
+  orgIdentifier: "default"
+  identifier: "test2_Clone"
+  name: "test2 - Clone"
